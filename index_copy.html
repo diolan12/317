@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>317</title>
+    <style>
+        video {
+            display: block;
+            margin-bottom: 1em;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            /*min-width:800px !important;*/
+        }
+    </style>
+    <script src="index_files/start_copy.js">
+        // __wm.rw(0);
+    </script>
+    <script>
+        // __wm.rw(0);
+    </script>
+</head>
+
+<body>
+    <video id="myvideo" width="100%" height="100%" controls="" style="background:black">
+			<source src="cicada_317.mp4" type="video/mp4">
+		</video>
+    <script>
+        var myvid = document.getElementById('myvideo');
+        var myvids = [
+            "cicada_317.mp4"
+        ];
+        var activeVideo = 0;
+
+        myvid.addEventListener('ended', function(e) {
+            // update the new active video index
+            activeVideo = (++activeVideo) % myvids.length;
+
+            // update the video source and play
+            myvid.src = myvids[activeVideo];
+            myvid.play();
+        });
+    </script>
+
+    <!--playback timings(ms):
+    exclusion.robots.policy: 0.289
+    PetaboxLoader3.resolve: 55.565
+    exclusion.robots: 0.304
+    RedisCDXSource: 0.669
+    LoadShardBlock: 51.11(3)
+    PetaboxLoader3.datanode: 59.398(4)
+    CDXLines.iter: 17.953(3)
+    esindex: 0.011
+    load_resource: 86.786
+    captures_list: 77.239
+        -->
+    <iframe src="./index_files/start.html" style="display:block"></iframe>
+</body>
+
+</html>
